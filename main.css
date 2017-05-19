@@ -1,0 +1,43 @@
+header {
+    font-size: 20px;
+    font-weight: bold;
+}
+    #wrapper {
+    display: flex;
+    flex-direction: column;
+}
+#navar {
+    margin-top: 10px;
+}
+#navbar a {
+    display: block;
+    margin: 10px;
+    text-decoration: none;
+    color: black;
+}
+
+#navbar a:hover {
+    background-color: lightgrey;
+}
+
+@media(min-width: 500px) {
+    #wrapper {
+        display: flex;
+        flex-direction: row;
+    }
+
+    #navbar {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 200px;
+        margin-top: 10px;
+        margin-left: 10px;
+    }
+
+    #main-doc {
+        margin-left: 200px;
+        max-width: 700px;
+    }    
+
+}
